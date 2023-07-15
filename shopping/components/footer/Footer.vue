@@ -3,9 +3,8 @@
     <div class="py-16 mx-auto sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div>
-        <img src="" class="mr-5 h-6 sm:h-9" alt="logo" />
           <p class="max-w-xs mt-4 text-sm text-gray-600">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+            Thank you for supporting our web project.
           </p>
           <div class="flex mt-8 space-x-6 text-gray-600">
             <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
@@ -31,13 +30,12 @@
         <div class="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p class="font-medium">
-              Company
+              Center
             </p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
               <a class="link" href="#">About</a>
-              <a class="link" href="#">Meet the Team</a>
+              <a class="link" href="#">Team</a>
               <a class="link" href="#">History</a>
-              <a class="link" href="#">Careers</a>
             </nav>
           </div>
           <div>
@@ -45,21 +43,21 @@
               Services
             </p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <a class="link" href="#">1on1 Coaching</a>
-              <a class="link" href="#">Company Review</a>
-              <a class="link" href="#">Accounts Review</a>
-              <a class="link" href="#">HR Consulting</a>
-              <a class="link" href="#">SEO Optimisation</a>
+              <a class="link" href="#">service1</a>
+              <a class="link" href="#">service2</a>
+              <a class="link" href="#">service3</a>
+              <a class="link" href="#">service4</a>
+              <a class="link" href="#">service5</a>
             </nav>
           </div>
           <div>
             <p class="font-medium">
-              Helpful Links
+              Additional Links
             </p>
             <nav class="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-              <a class="link" href="#">Contact</a>
-              <a class="link" href="#">FAQs</a>
-              <a class="link" href="#">Live Chat</a>
+              <a class="link" href="#">link1</a>
+              <a class="link" href="#">link2</a>
+              <a class="link" href="#">link3</a>
             </nav>
           </div>
           <div>
