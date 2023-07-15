@@ -1,9 +1,3 @@
-const axios = require('@nuxtjs/axios')
-
-// let allProducts = {}
-// let allProducts = axios.get('localhost:8001/api/products/')
-console.log(this.$axios.$get('http://icanhazip.com'));
-
 export const state = () => ({
   products: [
     {

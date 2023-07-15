@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use Mohammadv184\ArCaptcha\ArCaptcha;
 
 class AdminController extends Controller

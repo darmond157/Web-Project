@@ -19,13 +19,13 @@
 										<CInputGroupText>
 											<CIcon icon="cil-user" />
 										</CInputGroupText>
-										<CFormInput placeholder="Username" id="username" />
+										<CFormInput placeholder="Username" id="username" v-model="username"/>
 									</CInputGroup>
 									<CInputGroup class="mb-4">
 										<CInputGroupText>
 											<CIcon icon="cil-lock-locked" />
 										</CInputGroupText>
-										<CFormInput type="password" placeholder="Password" id="password" />
+										<CFormInput type="password" placeholder="Password" id="password" v-model="password"/>
 									</CInputGroup>
 									<CRow>
 										<Arcaptcha :site_key="site_key" :callback="solved" />
@@ -64,6 +64,8 @@ export default {
 			captcha_solved: false,
 			captcha_error: '',
 			isLoading: false,
+			username:'',
+			password:''
 		};
 	},
 	beforeCreate() {
@@ -80,14 +82,17 @@ export default {
 
 		LoginAuthentication() {
 
+			console.log(this.username);
+			console.log(this.password);
+			console.log(this.captcha_token);
 			localStorage.setItem('page', 1)
 
 			if (this.captcha_token !== 0) {
 				this.isLoading = true
 				axios
 					.post('/api/auth/admin', {
-						username: document.getElementById('username').value,
-						password: document.getElementById('password').value,
+						username: this.username,
+						password: this.password,
 						arcaptchaToken: this.captcha_token
 					})
 					.then(value => {
@@ -98,6 +103,7 @@ export default {
 						}
 					})
 					.catch((e) => {
+						console.log(e);
 						this.errorMsg = e.response.data
 						this.isLoading = false
 					})
