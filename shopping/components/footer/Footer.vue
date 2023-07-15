@@ -74,7 +74,7 @@
         </div>
       </div>
       <p class="mt-8 text-xs text-gray-800">
-        © 2023 Company Name
+        © 1401-2 Web Project
       </p>
     </div>
   </footer>
